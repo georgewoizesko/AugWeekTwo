@@ -128,6 +128,14 @@ public class Animals extends Zoo {
 	public void setHappy(boolean happy) {
 		this.happy = happy;
 	}
+
+
+	@Override
+	public String toString() {
+		return "Animals [location=" + location + ", animalClass=" + animalClass + ", order=" + order + ", family="
+				+ family + ", species=" + species + ", name=" + name + ", age=" + age + ", alive=" + alive + ", hungry="
+				+ hungry + ", happy=" + happy + "]";
+	}
 	
 	
 	

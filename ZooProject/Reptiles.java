@@ -47,6 +47,13 @@ public class Reptiles extends Animals{
 	public void setEggs(boolean eggs) {
 		this.eggs = eggs;
 	}
+	@Override
+	public String toString() {
+		return "Reptiles [numOfLegs=" + numOfLegs + ", numOfOffspring=" + numOfOffspring + ", scales=" + scales
+				+ ", shell=" + shell + ", eggs=" + eggs + ", location=" + location + ", animalClass=" + animalClass
+				+ ", order=" + order + ", family=" + family + ", species=" + species + ", name=" + name + ", age=" + age
+				+ ", alive=" + alive + ", hungry=" + hungry + ", happy=" + happy + "]";
+	}
 	
 	
 }

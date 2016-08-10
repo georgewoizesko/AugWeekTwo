@@ -47,6 +47,13 @@ public class Birds extends Animals{
 	public void setSwim(boolean swim) {
 		this.swim = swim;
 	}
+	@Override
+	public String toString() {
+		return "Birds [habitat=" + habitat + ", numOfEggs=" + numOfEggs + ", flight=" + flight + ", flock=" + flock
+				+ ", swim=" + swim + ", location=" + location + ", animalClass=" + animalClass + ", order=" + order
+				+ ", family=" + family + ", species=" + species + ", name=" + name + ", age=" + age + ", alive=" + alive
+				+ ", hungry=" + hungry + ", happy=" + happy + "]";
+	}
 	
 	
 }

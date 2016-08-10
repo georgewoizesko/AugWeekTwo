@@ -49,6 +49,14 @@ public class Fish extends Animals{
 		this.saltWater = saltWater;
 	}
 
+	@Override
+	public String toString() {
+		return "Fish [numOfFins=" + numOfFins + ", scales=" + scales + ", gameFish=" + gameFish + ", saltWater="
+				+ saltWater + ", location=" + location + ", animalClass=" + animalClass + ", order=" + order
+				+ ", family=" + family + ", species=" + species + ", name=" + name + ", age=" + age + ", alive=" + alive
+				+ ", hungry=" + hungry + ", happy=" + happy + "]";
+	}
+
 	
 	
 }

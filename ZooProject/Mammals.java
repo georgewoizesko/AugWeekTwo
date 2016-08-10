@@ -15,6 +15,13 @@ public class Mammals extends Animals{
 		this.hairLength = hairLength;
 		this.habitat = habitat;
 	}
+	@Override
+	public String toString() {
+		return "Mammals [claws=" + claws + ", hooves=" + hooves + ", hairLength=" + hairLength + ", habitat=" + habitat
+				+ ", location=" + location + ", animalClass=" + animalClass + ", order=" + order + ", family=" + family
+				+ ", species=" + species + ", name=" + name + ", age=" + age + ", alive=" + alive + ", hungry=" + hungry
+				+ ", happy=" + happy + "]";
+	}
 	public boolean isClaws() {
 		return claws;
 	}

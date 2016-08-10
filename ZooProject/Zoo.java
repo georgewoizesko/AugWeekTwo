@@ -5,15 +5,15 @@ import java.util.ArrayList;
 public class Zoo {
 
 	public static void main(String[] args) {
+		int totalAnimals = 20;
 		
-		
-		ArrayList<Animals> theZoo = new ArrayList<>(20);
-		
-		Mammals orca = new Mammals("Zoo", "`Mammal", "Carnivore", "Dolphin", "Orca", "Willy", 15, true, true, true, false, false, 0, "Ocean");
-		Mammals lion = new Mammals("Zoo", "`Mammal", "Carnivore", "Felidae", "Lion", "Tarzan", 6, true, false, true, true, false, 3, "Land");
+		ArrayList<Animals> theZoo = new ArrayList<>(totalAnimals);
+				
+		Mammals orca = new Mammals("Zoo", "Mammal", "Carnivore", "Dolphin", "Orca", "Willy", 15, true, true, true, false, false, 0, "Ocean");
+		Mammals lion = new Mammals("Zoo", "Mammal", "Carnivore", "Felidae", "Lion", "Tarzan", 6, true, false, true, true, false, 3, "Land");
 		Mammals chimp = new Mammals("Zoo", "Mammal", "Omnivore", "Great Ape", "Chimpanzee", "Henry", 14, true, true, true, false, false, 4, "Land");
 		Mammals groundHog = new Mammals("Zoo", "Mammal", "Herbavore", "Rodent", "Ground Hog", "Phill", 3, true, true, false, true, false, 1, "Land");
-		
+				
 		Birds pigeon = new Birds("Zoo", "Bird", "Omnivore", "Doves", "Rock Pigeon", "Coo", 1, true, true, true, "City", 3, true, true, false);
 		Birds penguin = new Birds("Zoo", "Bird", "Omnivore", "Spheniscidae", "Penguin", "Penny", 3, true, true, false, "Ocean", 1, false, true, true);
 		Birds anhinga = new Birds("Zoo", "Bird", "Omnivore", "Anhingide", "Anhinga", "Diver", 3, true, true, true, "Bays", 5, true, false, true);
@@ -56,9 +56,32 @@ public class Zoo {
 		theZoo.add(anaconda);
 		
 		
-		System.out.println(theZoo.get(3));
-		System.out.println("Today at the zoo I saw " );
-
+		for (int i = 0; i < totalAnimals; i++) {
+			
+			System.out.print("Today at the Zoo I saw a ");
+			System.out.print(theZoo.get(i).getSpecies());
+			System.out.print(" named ");
+			System.out.print(theZoo.get(i).getName());
+			System.out.print(". The zookeeper said it was ");
+			System.out.print(theZoo.get(i).getAge());
+			System.out.print(" years old, is a ");
+			System.out.print(theZoo.get(i).getAnimalClass());
+			
+		if (theZoo.get(i).isAlive()) {
+			System.out.print(", alive");
+		} else {
+			System.out.print(" but has passed away");
+		}
+		if (theZoo.get(i).isHungry()) {
+			System.out.println(", and that they are very hungry.");
+		} else {
+			System.out.println(", and is not hungry at all.");
+		}
+						
+			
+		}
+		
+		
 	}
 
 }

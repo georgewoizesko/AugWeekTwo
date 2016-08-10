@@ -47,6 +47,13 @@ public class Insects extends Animals{
 	public void setSwarm(boolean swarm) {
 		this.swarm = swarm;
 	}
+	@Override
+	public String toString() {
+		return "Insects [region=" + region + ", numOfLegs=" + numOfLegs + ", numOfEggs=" + numOfEggs + ", parasite="
+				+ parasite + ", swarm=" + swarm + ", location=" + location + ", animalClass=" + animalClass + ", order="
+				+ order + ", family=" + family + ", species=" + species + ", name=" + name + ", age=" + age + ", alive="
+				+ alive + ", hungry=" + hungry + ", happy=" + happy + "]";
+	}
 	
 	
 
